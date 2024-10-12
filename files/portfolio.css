@@ -1,0 +1,445 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hind", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    background-color: rgb(239, 242, 242);
+}
+html{
+    scroll-behavior: smooth;
+}
+section{
+    
+    height: 100vh;
+    width: 95%;
+    margin: 0 auto;
+}
+/* start of header stylings */
+.header{
+    position: sticky;
+    width: 100%;
+    top: 0;
+    background-color: rgb(109, 107, 107);
+    padding: 20px;
+    margin-bottom: 2vh;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+/* logo stylings */
+.logo h2 {
+    text-align: left;
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 13px;
+    color: white;
+   }
+/* menus stylings */
+.menus ul{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+.menus ul li{
+    list-style: none;
+    margin: 20px;
+
+}
+.menus ul li a{
+    text-decoration: none;
+     color:  white;
+}
+#mySidenav,.open{
+    display: none;
+}
+
+/* end of header */
+.center{
+    line-height: 8vh;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background: linear-gradient(rgba(255, 255, 255, 0.011),rgb(0, 0, 0)),url(../images/portfo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.center h4{
+    font-size: 4vh;
+}
+.center h1{
+    font-size: 12vh;
+    font-weight: bold;
+}
+.center h3{
+    font-size: 4vh;
+}
+/* start of living room */
+.livingroom{
+    height: auto;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.living1{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    width: 30%;
+    text-align: left;
+}
+.living1 h1,.bedroom1 h1,.Kitchen1 h1{
+    background-color: orange;
+    padding: 3px;
+    margin: 3px;
+    color: white;
+}
+.living1 img{
+    width: 100%;
+    height: 100%;
+}
+
+/* start of kitchen room */
+.Kitchenroom{
+    height: auto;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.Kitchen1{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    width: 30%;
+    text-align: left;
+}
+.Kitchen1 img{
+    width: 100%;
+    height: 100%;
+}
+/* start of bed rooms */
+.bedrooms{
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.bedroom1{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    width: 30%;
+    text-align: left;
+}
+.bedroom1 img{
+    width: 100%;
+    height: 100%;
+}
+/* end of rooms */
+
+footer{
+    padding: 20px;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+    background-color: black;
+ }
+ .ft1{
+    color: white;
+    width: 20vw;
+    height: 40vh;
+    margin: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.ft1 img{
+    width: 9vw;
+}
+.ft1 p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+.ft1 p a{
+    text-decoration: none;
+    color: blue;
+}
+
+@media only screen and (max-width: 700px){
+    html, body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
+       
+    
+  
+  
+  /* section stylings */
+section{
+    width: 100%;
+    overflow-x: hidden;
+    
+}
+/* start of header stylings */
+.header{
+    position: sticky;
+    width: 100%;
+    top: 0;
+    background-color: black;
+    color: white;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+
+
+/* menus stylings */
+/* menus stylings */
+.menus li{
+    display: none;
+}
+.menus i{
+    display: block;
+}
+
+ /* small screen nav bar */
+             
+                
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  margin: 30px;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#mySidenav,.open{
+    display: block;
+}
+.media{
+    width: 90%;
+    height: 100px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+.media a{
+    color: orange;
+
+}
+.media a{
+    margin: 10px;
+    font-size: 35px;
+}
+
+
+
+/* end of header */
+.center{
+    line-height: 6vh;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background: linear-gradient(rgba(255, 255, 255, 0.011),rgb(0, 0, 0)),url(../images/portfo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.center h4{
+    font-size: 3vh;
+}
+.center h1{
+    font-size: 7vh;
+    font-weight: bold;
+}
+.center h3{
+    font-size: 2vh;
+}
+
+/* start of living room */
+.livingroom{
+    background-color: white;
+    height: auto;
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: block;
+  
+}
+.living1{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+}
+.living1 img{
+    width: 100%;
+    height: 100%;
+}
+
+/* start of kitchen room */
+.Kitchenroom{
+    background-color: white;
+    height: auto;
+    margin: 0;
+   
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: block;
+    
+}
+.Kitchen1{
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    width: 100%;
+    text-align: left;
+}
+.Kitchen1 img{
+    width: 100%;
+    height: 100%;
+}
+/* start of bed rooms */
+.bedrooms{
+    background-color: white;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: block;
+    
+}
+.bedroom1{
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    width: 100%;
+    text-align: left;
+}
+.bedroom1 img{
+    width: 100%;
+    height: 100%;
+}
+/* end of rooms */
+
+footer{
+    padding: 20px;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: block;
+    background-color: black;
+ }
+ .ft1{
+    color: white;
+    width: 100%;
+    height: auto;
+    margin: 25px;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+.ft1 img{
+    width: 37vw;
+}
+.ft1 p{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
+}
